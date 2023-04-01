@@ -1,0 +1,14 @@
+app:
+  replicas: 1
+  env: dev
+  image: vikashashoke/ui
+  computers: | 
+    limits:
+     cpu: 1
+     memory: 2Gi
+    requests:
+     cpu: 1 
+     memory: 2Gi
+    
+hpa:
+  enabled: false
